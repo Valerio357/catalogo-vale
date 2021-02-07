@@ -22,8 +22,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-   "scripts": {
-  "start": "node index.js",
-  "build": "public"
-  }
+ "scripts": {
+  "postinstall": "ng build"
+}
 }
