@@ -3,8 +3,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var mongodb = require('mongodb');
 
-var dbConn = mongodb.MongoClient.connect('mongodb+srv://valerio:Sharingan93@cluster0.hercr.mongodb.net/article?retryWrites=true&w=majority
-')
+var dbConn = mongodb.MongoClient.connect('mongodb://localhost:27017')
 
 var app = express();
 
