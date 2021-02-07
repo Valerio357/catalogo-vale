@@ -8,7 +8,7 @@ var dbConn = mongodb.MongoClient.connect('mongodb://localhost:27017')
 var app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.resolve(__dirname, '../public')));
+app.use(express.static(path.resolve(__dirname, 'public')));
 
 
 app.post('/post-article', function (req, res) {
