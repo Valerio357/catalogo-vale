@@ -2,7 +2,6 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var mongodb = require('mongodb');
-const uri = process.env.MONGODB_URI;
 
 
 var dbConn = mongodb.MongoClient.connect('mongodb+srv://valerio:Sharingan93@cluster0.hercr.mongodb.net/Cluster0?retryWrites=true&w=majority')
