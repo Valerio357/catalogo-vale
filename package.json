@@ -21,5 +21,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+  "start": "node index.js",
+  "build": "webpack"
+  }
 }
