@@ -21,8 +21,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
- "scripts": {
-  "postinstall": "ng build"
-}
+  "license": "ISC"
 }
