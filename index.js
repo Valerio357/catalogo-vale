@@ -14,14 +14,14 @@ app.use(express.static(path.resolve(__dirname, 'public')));
 app.post('/post-article', function (req, res) {
     dbConn.then(function(db) {
         delete req.body._id; // for safety reasons
-        db.db("article").collection('article').insertOne(req.body);
+        db.db("Cluster0").collection('article').insertOne(req.body);
     });    
     res.send('Data received:\n' + JSON.stringify(req.body));
 });
 
 app.get('/view-article',  function(req, res) {
     dbConn.then(function(db) {
-        db.db("article").collection('article').find({}).toArray().then(function(article) {
+        db.db("Cluster0").collection('article').find({}).toArray().then(function(article) {
             res.status(200).json(article);
         });
     });
